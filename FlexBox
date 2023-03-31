@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Disposición de elementos en CSS</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <h1>Disposición de elementos en CSS</h1>
+        <div id="imagenes">
+            <img src="madrid1.jpg" alt="madrid1" width="300px" height="300px" />
+            <img src="madrid2.jpg" alt="madrid2" width="300px" height="300px" />
+            <img src="madrid3.jpg" alt="madrid3" width="300px" height="300px" />
+            <img src="madrid4.webp" alt="madrid4" width="300px" height="300px" />
+            <img src="madrid5.jpg" alt="madrid5" width="300px" height="300px" />
+            <img src="madrid6.jpg" alt="madrid6" width="300px" height="300px" />
+        </div>
+    </body>
+</html>
+
+<css>
+
+#imagenes {
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+</css>
