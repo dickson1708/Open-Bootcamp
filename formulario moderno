@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosform.css"/>
+</head>
+<body id="fondo-color">
+    <h2 id="registrate">Regístrate en los formularios</h2>
+    <div id="contenedor">
+        <a id="registrarsecongoogle" href="google.com" target="_blank" >Registrarse con Google</a>
+        <picture>
+            <img src="google.png" alt="google"/>
+        </picture>
+    </div>
+    <div id="separator">
+        <hr>
+        <span>O...</span>
+        <hr>
+    </div>
+    <form action="" method="" >
+        <div id="name">
+            <label for="name">
+                <span>Name</span>
+                <input id="inputname" name="name">
+            </label>
+            <label for="username">
+                <span>Username</span>
+                <input id="inputusername" name="username">
+            </label>
+        </div>
+        <div id="email">
+            <label for="email">
+                <span>Email</span>
+                <input id="inputemail" name="email">
+            </label>
+        </div>
+        <div id="password">
+            <label for="password">
+                <span>Password</span>
+                <input id="inputpassword" name="password" placeholder="+6 caracteres">
+            </label>
+        </div>
+    </form>
+</body>
+</html>
+
+<style>
+
+#fondo-color {
+    background-color: #161717;
+}
+
+#registrate {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registrarsecongoogle {
+    color: white;
+    background-color: rgb(67, 67, 202);
+    text-decoration: none;
+    padding: 15px 40px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registrarsecongoogle:hover {
+    opacity: 0.7;
+}
+
+#contenedor picture {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedor picture img {
+    width: 75%
+}
+
+#separator {
+    color: white;
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+#separator hr {
+    flex-grow: 1;
+}
+
+#name {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+#email {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#password {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+</style>
