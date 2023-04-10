@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diseño Responsive con CSS</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <h1 id="titulo">Diseño Responsive con CSS</h1>
+        <div id="barra-principal">
+            <button>INICIO</button>
+            <button>GALERIA</button>
+            <button>RESERVA</button>
+            <button>RECLAMACIONES</button>
+            <button>PREGUNTAS FRECUENTES</button>
+        </div>
+        <br>
+        <div id="barra-izquierda">
+            <button>CONTACTO</button>
+            <button>AVISO LEGAL</button>
+            <button>ENCUENTRANOS</button>
+        </div>
+    </body>
+</html>
+
+<style>
+#titulo {
+    display: flex;
+    justify-content: center;
+}
+
+#barra-principal {
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+#barra-izquierda {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    height: 75vh;
+}
+
+@media (max-width: 640px) {
+    #barra-izquierda {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+    }
+}
+
+</style>
